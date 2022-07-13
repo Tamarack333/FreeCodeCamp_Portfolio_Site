@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <title> Wilson's Portfolio Site</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@600&family=Edu+QLD+Beginner&family=Edu+TAS+Beginner:wght@600&display=swap');
+      body{
+        margin: 0px;
+      }
+      @media screen{
+        #navbar{
+          position: fixed;
+          background-color: rgb(94, 11, 21);
+          width: 100%;
+          height: 75px;
+          border-bottom: solid 2px;
+          display: flex;
+          justify-content: right;
+          align-items: center;
+        }
+        #navbar a{
+          font-family: 'Edu TAS Beginner', cursive;
+          text-decoration: none;
+          color: white;
+          font-size: 30px;
+          margin-right: 50px;
+        }
+        #navbar a:hover{
+          color: rgb(176, 176, 176);
+        }
+        #welcome-section{
+          height: 100vh;
+          background-image: radial-gradient(rgb(202, 247, 226),rgb(223, 160, 110));
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        h1{
+          font-size: 40px;
+          font-family: 'Albert Sans', sans-serif;
+        }
+        #messageBox p{
+          font-family: 'Edu TAS Beginner', cursive;
+          text-align: left;
+        }
+        section{
+          text-align: center;
+        }
+        #projects{
+          background-color: rgb(202, 247, 226);
+          padding-top: 100px;
+        }
+        #project-showcase{
+          display: flex;
+          overflow: auto;
+          white-space: nowrap;
+          flex-direction: row;
+          gap: 50px;
+        }
+        #project-showcase img{
+          max-width: 500px;
+          max-height: 300px;
+          border: solid;
+          border-color: black;
+          transition: transform 0.3s ease-out;
+        }
+        #project-showcase img:hover{
+          transform: translatey(-8px);
+        }
+        #project-showcase div{
+          border: solid;
+          border-color: rgba(133, 133, 133, 0.542);
+        }
+        #project-showcase h4{
+          margin: 20px;
+        }
+        h3{
+          font-family: 'Albert Sans', sans-serif;
+          margin: 0px;
+          font-size: 30px;
+        }
+        h4{
+          font-family: 'Edu TAS Beginner', cursive;
+        }
+        #contact{
+          background-color: rgb(202, 247, 226);
+          padding-top: 100px;
+        }
+        .linkImg{
+          margin: 10px;
+          max-width: 100px;
+          max-height: 100px;
+          transition: transform 0.3s ease-out;
+        }
+        .linkImg:hover{
+          transform: translatey(-8px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#projects">Creations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  <section id="welcome-section">
+    <div id = "messageBox">
+      <h1>What's Up? I'm Steven Wilson.</h1>
+      <p>A Web Developer</p>
+    </div>
+  </section>
+  <section id="projects">
+    <h3>These are some of my projects to date.</h3>
+    <div id="project-showcase">
+      <div>
+        <h4>My version of the product landing page for the responsive web design certification from free code camp.</h4>
+        <a href="https://github.com/corsoNova/Product_landing_page" target="_blank" id="productPage">
+          <img class="project-tile" src="https://i.ibb.co/ZzTdRzZ/Screenshot-4.png">
+        </a>
+      </div>
+      <div>
+        <h4>My version of the tribute page for the responsive web design certification from free code camp.</h4>
+        <a href="https://github.com/corsoNova/tribute" target="_blank" id="tributePage">
+          <img class="project-tile" src="https://i.ibb.co/jD2JRwL/Screenshot-6.png">
+        </a>
+      </div>
+      <div>
+        <h4>My version of the survey page for the responsive web design certification from free code camp.</h4>
+      <a href="https://github.com/corsoNova/FreeCode-Survey" target="_blank" id="surveyPage">
+        <img class="project-tile" src="https://i.ibb.co/HGDXnRX/Screenshot-8.png">
+      </a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h3>Let me build something for you!</h3>
+    <a id="profile-link" href="https://github.com/corsoNova" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="linkImg">
+    </a>
+    <a id="profile-link" href="Steven26Wilson@gmail.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" class="linkImg">
+    </a>
+  </section>
+  </body>
+</html>
